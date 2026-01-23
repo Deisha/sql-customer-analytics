@@ -187,3 +187,6 @@ sql-customer-analytics/
 ## Final Note
 This project prioritizes **business reasoning, explainability, and reproducibility** over model complexity.  
 It is intended to reflect how customer analytics is applied in real-world decision-making environments.
+
+## Tableau Link
+https://public.tableau.com/views/CustomerAnalyticsandPredictiveCLVDashboard/CustomerAnalyticsPredictiveCLVDashboard?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
