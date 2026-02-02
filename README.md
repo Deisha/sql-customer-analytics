@@ -124,6 +124,11 @@ The dashboard is designed to:
 
 Product category analysis is included as foundational exploratory analysis but is intentionally excluded from the final dashboard to maintain a customer-centric decision focus.
 
+Dashboard Design Philosophy
+The dashboard utilizes a Top-Down analytical approach:
+Strategic Layer: KPI cards and aggregate bar charts visualize the total financial impact ($31.4k at risk) across the entire customer base.
+Operational Layer: Granular tables are intentionally filtered to the Top 25 individuals to provide a prioritized, actionable outreach list for management, rather than an unfiltered data dump.
+
 ### Key Components
 - KPI cards:
   - Total Customers
@@ -165,12 +170,14 @@ These insights directly support retention, upsell, and re-engagement strategies.
 ---
 
 ## Repository Structure
+
+```text
 sql-customer-analytics/
 │
 ├── data/
 │   └── raw_transactions.csv
 │
-├── notebooks/                
+├── scripts/                
 │   ├── generate_dataset.py
 │   ├── load_to_sqlite.py
 │   └── create_visuals.py
@@ -185,13 +192,12 @@ sql-customer-analytics/
 │   └── dashboard_exports.sql
 │
 ├── visuals/
-│   ├── dashboard/
-│   ├── exploratory/
-│   ├── foundational/
 │   └── dashboard.png
 │
 └── README.md
+```
 ---
+
 
 ## Final Note
 This project prioritizes **business reasoning, explainability, and reproducibility** over model complexity.  
