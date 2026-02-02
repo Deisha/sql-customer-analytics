@@ -85,7 +85,16 @@ Segments include:
 
 Segmentation logic is implemented entirely in SQL and designed to support **actionable business decisions**, not just descriptive grouping.
 ---
+### Segment Definitions & Logic
+To ensure actionable business insights, segments are defined as follows:
 
+| Segment | Definition | Primary Metric |
+| :--- | :--- | :--- |
+| **High Value** | Top-tier spenders with the highest total financial impact. | Monetary (High) |
+| **Loyal Customers** | Consistent repeat shoppers, though individual order values may be lower. | Frequency (High) |
+| **At-Risk** | Previously high-value customers showing significant declining recency. | Recency (Low) |
+
+*Note: Dashboard tables are filtered to display the **Top 25 individual customers** within a segment to prioritize executive outreach, while summary charts reflect the total aggregate value.*
 ## Predictive Customer Lifetime Value (CLV)
 ### CLV Definition
 This project implements a **behavior-based predictive CLV model** that is intentionally explainable and assumption-driven.
